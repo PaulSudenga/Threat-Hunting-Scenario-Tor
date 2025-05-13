@@ -39,7 +39,7 @@ The scenario is built using a cloud-hosted Windows 10 virtual machine and levera
 ## 📌 Status
 
 - ✅ Repository initialized
-- 🖥️ Azure VM deployment in progress
+- 🖥️ Azure VM deployment completed
 - 🔍 Log simulation and KQL queries coming soon
 
 ---
