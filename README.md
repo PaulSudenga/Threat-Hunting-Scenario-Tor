@@ -1,6 +1,6 @@
 # 🕵️‍♂️ Threat Hunting Scenario: Tor Browser Usage
 
-(![image](https://github.com/user-attachments/assets/b3f11519-dcd1-48c4-af69-46abd5431c42)
+![image](https://github.com/user-attachments/assets/b3f11519-dcd1-48c4-af69-46abd5431c42)
 
 
 🚧 *This project is currently in development. Updates coming soon.*
