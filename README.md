@@ -1,6 +1,7 @@
 # 🕵️‍♂️ Threat Hunting Scenario: Tor Browser Usage
 
-![Coming Soon](https://i.imgur.com/oRZ7rqb.png)
+![Coming Soon](![image](https://github.com/user-attachments/assets/b3f11519-dcd1-48c4-af69-46abd5431c42)
+)
 
 🚧 *This project is currently in development. Updates coming soon.*
 
