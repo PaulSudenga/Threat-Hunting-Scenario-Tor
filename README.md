@@ -25,8 +25,7 @@ Management suspects that some employees may be using TOR browsers to bypass netw
 
 ### 1. Searched the `DeviceFileEvents` Table
 
-Searched DeviceFileEvents table for any file that had the string “tor” in it and discovered what looks like the user “CyberScy” downloaded a tor installer, did something that resulted in many tor-related files being copied to the desktop and creation of a file called `tor-shopping-list.txt` on the desktop at `2025-06-11T21:39:21.583459Z`.  These events began at:
-Query used to locate events: `2025-06-11T21:09:53.1315901Z`
+Searched DeviceFileEvents table for any file that had the string “tor” in it and discovered what looks like the user “CyberScy” downloaded a tor installer, did something that resulted in many tor-related files being copied to the desktop and creation of a file called `tor-shopping-list.txt` on the desktop at `2025-06-11T21:39:21.583459Z`.  These events began at `2025-06-11T21:09:53.1315901Z`.
 
 **Query used to locate events:**
 
@@ -47,18 +46,21 @@ DeviceFileEvents
 
 ### 2. Searched the `DeviceProcessEvents` Table
 
-Searched for any `ProcessCommandLine` that contained the string "tor-browser-windows-x86_64-portable-14.0.1.exe". Based on the logs returned, at `2024-11-08T22:16:47.4484567Z`, an employee on the "threat-hunt-lab" device ran the file `tor-browser-windows-x86_64-portable-14.0.1.exe` from their Downloads folder, using a command that triggered a silent installation.
+Searched the DeviceProcessEvents table for any `ProcessCommandLine` that contained the string “"tor-browser-windows-x86_64-portable-14.5.3".  Based on the logs returned, At `2:15:35 PM on June 11, 2025`, an employee on the "cyberchamber" device ran the file `tor‑browser‑windows‑x86_64‑portable‑14.5.3.exe`, stored in CyberScy’s Downloads folder, using a command that triggered a silent installation.
+
 
 **Query used to locate event:**
 
 ```kql
 
-DeviceProcessEvents  
-| where DeviceName == "threat-hunt-lab"  
-| where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-14.0.1.exe"  
-| project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
+DeviceProcessEvents
+| where DeviceName == "cyberchamber"
+| where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-14.5.3"
+| project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
+
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b07ac4b4-9cb3-4834-8fac-9f5f29709d78">
+![image](https://github.com/user-attachments/assets/2eacbd73-ede2-4c17-a9dc-e40d546a8d4f)
+
 
 ---
 
