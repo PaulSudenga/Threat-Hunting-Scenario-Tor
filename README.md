@@ -118,20 +118,20 @@ DeviceNetworkEvents
 - **Timestamp:** `2025‑06‑11T21:39:21.583459Z`
 - **Event:** The user "cyberscy" executed the file `tor-browser-windows-x86_64-portable-14.5.3.exe` in silent mode, initiating a background installation of the TOR Browser.
 - **Action:** Process creation detected.
-- **Command:** `tor-browser-windows-x86_64-portable-14.5.3.exe /S`
+- **Command:** `tor-browser-windows-x86_64-portable-14.5.3 /S`
 - **File Path:** `C:\Users\cyberscy\Downloads\tor-browser-windows-x86_64-portable-14.5.3.exe`
 
 ### 3. Process Execution - TOR Browser Launch
 
-- **Timestamp:** `2024-11-08T22:17:21.6357935Z`
+- **Timestamp:** `2025‑06‑11T14:15:35 PDT (21:15:35 UTC)`
 - **Event:** User "cyberscy" opened the TOR browser. Subsequent processes associated with TOR browser, such as `firefox.exe` and `tor.exe`, were also created, indicating that the browser launched successfully.
 - **Action:** Process creation of TOR browser-related executables detected.
 - **File Path:** `C:\Users\cyberscy\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe`
 
 ### 4. Network Connection - TOR Network
 
-- **Timestamp:** `2024-11-08T22:18:01.1246358Z`
-- **Event:** A network connection to IP `176.198.159.33` on port `9001` by user "cyberscy" was established using `tor.exe`, confirming TOR browser network activity.
+- **Timestamp:** `2025‑06‑11T14:16:30.9247503 PDT (21:16:30.9247503 UTC)`
+- **Event:** A network connection to IP `184.174.38.53` on port `9001` by user "cyberscy" was established using `tor.exe`, confirming TOR browser network activity.
 - **Action:** Connection success.
 - **Process:** `tor.exe`
 - **File Path:** `c:\users\cyberscy\desktop\tor browser\browser\torbrowser\tor\tor.exe`
@@ -139,14 +139,14 @@ DeviceNetworkEvents
 ### 5. Additional Network Connections - TOR Browser Activity
 
 - **Timestamps:**
-  - `2024-11-08T22:18:08Z` - Connected to `194.164.169.85` on port `443`.
-  - `2024-11-08T22:18:16Z` - Local connection to `127.0.0.1` on port `9150`.
+  - `2025-06-11T21:17:33.8919962Z` - Connected to `37.46.211.6` on port `443`.
+  - `2025-06-11T21:17:29.2435404Z` - Local connection to `127.0.0.1` on port `9150`.
 - **Event:** Additional TOR network connections were established, indicating ongoing activity by user "cyberscy" through the TOR browser.
 - **Action:** Multiple successful connections detected.
 
 ### 6. File Creation - TOR Shopping List
 
-- **Timestamp:** `2024-11-08T22:27:19.7259964Z`
+- **Timestamp:** `2025-06-11T21:39:21.583459Z`
 - **Event:** The user "cyberscy" created a file named `tor-shopping-list.txt` on the desktop, potentially indicating a list or notes related to their TOR browser activities.
 - **Action:** File creation detected.
 - **File Path:** `C:\Users\cyberscy\Desktop\tor-shopping-list.txt`
